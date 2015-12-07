@@ -128,7 +128,8 @@ color = raw_input("What is your favorite color?")
 
 print "Ah, so your name is %s, your quest is %s, " \
 "and your favorite color is %s." % (name, quest, color)
-# CONSOLE: "Ah, so your name is Lauren, your quest is to learn Python, and your favorite color is Blue."
+# CONSOLE: "Ah, so your name is Lauren, your quest is to learn Python,
+# and your favorite color is Blue."
     # raw_input collects user data
 
 
@@ -205,7 +206,7 @@ meal_with_tip = tip(meal_with_tax)
 
 
 ## Functions have 3 components:
-def hello_world(): # HEADER with def keyword, function name, and any parameters. DON'T FORGET PARANTHESES AND COLON!!
+def hello_world(): # HEADER with def keyword, function name, and any parameters.
 """Comment explaining what the function does!""" # OPTIONAL
     print "Hello World!"    # Indented Body(block) of function
 
