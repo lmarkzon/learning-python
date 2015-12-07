@@ -1,4 +1,4 @@
-# Comments still use a pound sign!
+## Comments still use a pound sign!
 
 """
 You can make multiline comments with 3 quotation marks!
@@ -6,7 +6,7 @@ You can make multiline comments with 3 quotation marks!
 
 
 
-# Variable Assignment and Printing
+## Variable Assignment and Printing
 my_variable = 10
 python = "Welcome to Python!"
 print python
@@ -14,7 +14,7 @@ print python
 
 
 
-# Integers/Floats/Booleans
+## Integers/Floats/Booleans
 my_int = 7
 # integer format code: %d
 my_float = 1.23
@@ -25,7 +25,7 @@ my_bool = False
 
 
 
-# Same basic math skills...
+## Same basic math skills...
 addition = 1 + 1
 difference = 5 - 3
 multiply = 5 * 5
@@ -35,7 +35,7 @@ modulo = 5 % 4 # gives you 1
 
 
 
-# Comparison operators...
+## Comparison operators...
 3 < 4
 5 > 3
 5 >= 5
@@ -45,7 +45,7 @@ modulo = 5 % 4 # gives you 1
 
 
 
-# To be And/Or Not to be...
+## To be And/Or Not to be...
 1 < 2 and 2 < 3
 # Both must be true to return true
 
@@ -68,7 +68,7 @@ print spam()
 
 
 
-# Calculating the total cost of a meal...
+## Calculating the total cost of a meal...
 meal = 44.50
 tax = 0.0675
 tip = 0.15
@@ -81,19 +81,19 @@ print("%.2f" % total)
 
 
 
-# escape backslashs!
+## escape backslashs!
 'This isn\'t flying, this is falling with style!'
 
 
 
-# Access by index
+## Access by index
 fifth_letter = "MONTY"[4]
 print fifth_letter
 # CONSOLE: 'Y'
 
 
 
-# STRING METHODS:
+## STRING METHODS:
     # methods that use dot notation can ONLY be used on strings
     # methods that don't (len and str) can be used on other types of objects
 parrot = "Norwegian Blue"
@@ -107,7 +107,7 @@ print str(pi) # turns object into string
 
 
 
-# String Conversion
+## String Conversion
     # String Concatenation
 print "Spam " + "and " + "eggs"
     # Explicit string conversion
@@ -116,7 +116,7 @@ print "The value of pi is around " + str(3.14)
 
 
 
-# String Formatting with %
+## String Formatting with %
 name = "Lauren"
 print "Hello %s" % (name)
 # CONSOLE: "Hello Lauren"
@@ -133,7 +133,7 @@ print "Ah, so your name is %s, your quest is %s, " \
 
 
 
-# Datetime Library and datetime.now() function
+## Datetime Library and datetime.now() function
 from datetime import datetime # importing a module
 now = datetime.now()
 
@@ -149,7 +149,7 @@ print '%s/%s/%s %s:%s:%s' % (now.month, now.day, now.year, now.hour, now.minute,
 
 
 
-# If Else Statements...
+## If Else Statements...
 def clinic():
     print "You've just entered the clinic!"
     print "Do you take the door on the left or the right?"
@@ -167,7 +167,7 @@ clinic()
 
 
 
-# PygLatin
+## PygLatin
 pyg = 'ay'
 original = raw_input('Enter a word:')
 word = original.lower()
@@ -186,7 +186,7 @@ else:
 
 
 
-# Calculating total cost of a meal 2...
+## Calculating total cost of a meal 2...
 def tax(bill):
     bill *= 1.08 # Adds 8% tax to a restaurant bill.
     print "With tax: %f" % bill
@@ -204,7 +204,7 @@ meal_with_tip = tip(meal_with_tax)
 
 
 
-# Functions have 3 components:
+## Functions have 3 components:
 def hello_world(): # HEADER with def keyword, function name, and any parameters. DON'T FORGET PARANTHESES AND COLON!!
 """Comment explaining what the function does!""" # OPTIONAL
     print "Hello World!"    # Indented Body(block) of function
@@ -234,7 +234,7 @@ power(37,4)
 
 
 
-# Functions can call other functions...
+## Functions can call other functions...
 def one_good_turn(n):
     return n + 1
 
@@ -255,7 +255,7 @@ def by_three(number):
 
 
 
-# Imports of Modules
+## Imports of Modules
 import math # imports math module for access to math methods...
 print math.sqrt(25) # (sqrt) --> square root
 # CONSOLE: 5.0
@@ -272,10 +272,15 @@ from math import *
 print sqrt(25)
 
 
-# Math Module DISCLAIMER
+## Math Module DISCLAIMER
 import math            # Imports the math module
 everything = dir(math) # Sets everything to a list of things from math
 print everything       # Prints 'em all!(everything available in the math module)
+# CONSOLE: ['__doc__', '__name__', '__package__', 'acos', 'acosh', 'asin', 'asinh', 'atan',
+        # 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp',
+        # 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'hypot', 'isinf',
+        # 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'modf', 'pi', 'pow', 'radians', 'sin',
+        # 'sinh', 'sqrt', 'tan', 'tanh', 'trunc']
 
 """Even if your own definitions don't directly conflict with names from imported
 modules, if you import * from several modules at once, you won't be able to figure
@@ -283,6 +288,32 @@ out which variable or function came from where. For these reasons, it's best to 
 with either import module and type module.name or just import specific variables and
 functions from various modules as needed.
 """
+
+
+
+## Built in python functions (that don't requre modules...):
+maximum = max(1,2,3)
+print maximum # max() returns the largest number
+
+minimum = min(1,2,3)
+print minimum # min() returns the smallest number
+
+absolute = abs(-42)
+print absolute # abs() returns absolute value of a number
+
+# returns type of object
+print type(25)
+print type(2.5)
+print type('hey')
+# CONSOLE: <type 'int'> <type 'float'> <type 'str'>
+
+
+# example of built in functions with an if/else...
+def distance_from_zero(arg):
+    if type(arg) == int or type(arg) == float:
+        return abs(arg)
+    else:
+        return "Nope"
 
 
 
